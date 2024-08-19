@@ -10,6 +10,9 @@
     width: 100%;
     align-items: center;
 }
+.icon{
+    display: none;
+}
 .nav-items{
     display: flex;
     gap: 20px;
@@ -34,7 +37,7 @@ li{
     display: none;
 }
 .top-left{
-    width: 75%;
+    width: 100%;
 }
 .text{
     display: flex;
@@ -113,8 +116,10 @@ hr{
 
 @media screen and (max-width:960px){
     .nav-items{
-        display: flex;
-        flex-direction: column;
+        display: none;
+    }
+    .icon{
+        display: block;
     }
     .top{
         display: flex;
@@ -128,9 +133,6 @@ hr{
         flex-direction: column;
         padding: 0;
         width: 100%;
-    }
-    .first-paragraph{
-        
     }
     .bottom{
         display: flex;
