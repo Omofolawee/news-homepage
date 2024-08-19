@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+li{
+    list-style: none;
+}
+.container{
+    height: 100vh;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+.desktop-image{
+    width: 95%;
+}
+.mobile-image{
+    display: none;
+}
+.top-left{
+    width: 75%;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.title{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.first-paragraph{
+    font-size: 20px;
+    color: gray;
+}
+button{
+    background-color: rgba(235, 80, 80, 0.4);
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 10px 18px;
+    letter-spacing: 2px;
+}
+.top-right{
+    background-color:rgb(1, 1, 27) ;
+    color: white;
+    padding: 10px;
+    width: 35%;
+}
+.heading{
+    color: goldenrod;
+    font-size: 35px;
+    font-weight: bold;
+}
+.part{
+    padding: 40px 0px;
+}
+.sub-heading{
+    font-size: 30px;
+}
+.details{
+    font-size:20px;
+    color: gray;
+}
+hr{
+    padding: 0;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+.box > img{
+    height: 150px;
+    width: 120px;
+}
+.number{
+    color: rgb(235, 112, 112);
+    font-size: 30px;
+    font-weight: bolder;
+}
+.bottom-heading{
+    font-size: 25px ;
+    font-weight: bolder;
+}
+.bottom-paragraph{
+    color: gray;
+    font-size: 18px;
+}
+
+@media screen and (max-width:960px){
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-right{
+        width: 100%;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    .first-paragraph{
+        
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-image{
+        display: block;
+        width: 100%;
+    }
+    .desktop-image{
+        display: none;
+    }
+} 
+
+
